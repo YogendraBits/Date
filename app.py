@@ -59,9 +59,9 @@ st_lottie(isometric_heart, height=200, key="isometric_heart")
 # --- Image Carousel ---
 st.markdown("### Some moments and memories 💞")
 carousel_images = [
-    ("images/kitten.png", "I can't wait to make more memories like this 😸"),
-    ("images/kitten2.png", "How adorable you look 💖"),
-    ("images/kitten1.png", "Our Little Romance")
+    ("images/kitten.jpg", "I can't wait to make more memories like this 😸"),
+    ("images/kitten2.jpg", "How adorable you look 💖"),
+    ("images/kitten1.jpg", "Our Little Romance")
 ]
 
 cols = st.columns(len(carousel_images))

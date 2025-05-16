@@ -1,0 +1,4 @@
+streamlit
+streamlit-lottie
+streamlit-player
+requests

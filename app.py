@@ -61,6 +61,9 @@ st.markdown("### Some moments and memories 💞")
 carousel_images = [
     ("images/kitten1.jpg", "I can't wait to make more memories like this 😸"),
     ("images/kitten3.jpg", "How adorable you look 💖"),
+    ("images/kitten2.jpg", "Our Little Romance"),
+    ("images/kitten1.jpg", "I can't wait to make more memories like this 😸"),
+    ("images/kitten3.jpg", "How adorable you look 💖"),
     ("images/kitten2.jpg", "Our Little Romance")
 ]
 

@@ -24,7 +24,7 @@ c.execute('''CREATE TABLE IF NOT EXISTS responses (
 conn.commit()
 
 with st.sidebar:
-    st_player("https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    st_player("https://youtu.be/90Q5bMN6u2w?si=fVMwb0JjpJeWDJZW",
               playing=True, loop=True)
 # --- Admin Login ---
 st.sidebar.title("Admin Login")
@@ -59,9 +59,9 @@ st_lottie(isometric_heart, height=200, key="isometric_heart")
 # --- Image Carousel ---
 st.markdown("### Some moments and memories 💞")
 carousel_images = [
-    ("images/kitten1.jpg", "Remember our first call? 😸"),
-    ("images/kitten2.jpg", "This reminds me of you 💖"),
-    ("images/kitten3.jpg", "I can't wait to make more memories like this.")
+    ("images/kitten.png", "I can't wait to make more memories like this 😸"),
+    ("images/kitten2.png", "How adorable you look 💖"),
+    ("images/kitten1.png", "Our Little Romance")
 ]
 
 cols = st.columns(len(carousel_images))
@@ -74,7 +74,6 @@ for i, (img_url, caption) in enumerate(carousel_images):
 # --- Title and Intro ---
 st.markdown("""
     <div style='text-align: center;'>
-        <h1 style='color: #FF4B4B;'>Hey love 💌</h1>
         <h3>I have something to ask you...</h3>
     </div>
 """, unsafe_allow_html=True)
@@ -183,6 +182,7 @@ if st.session_state.get('answer') == "yes":
                 st.session_state["date_submitted"] = True
                 st.balloons()
                 st.snow()
+                st.rerun()
 
     # Show confirmation card if form has been submitted
     if st.session_state.get("date_submitted"):
